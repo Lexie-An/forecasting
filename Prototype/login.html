@@ -25,9 +25,52 @@
                 <label for="password">Password :</label>
                 <input type="text" class="passbox" id="password" name="password" required>
             </div>
-            <div> <a href="" class="forgotpass">Forgot Password ? Click Here</a> </div>
+            
+            <button class="forgotpass" onclick="openForgotpass()">Forgot Password ? Click Here</button>
+
             <div> <button class="btn-login" type="submit" value="Log In" name="login"> Log In </button> </div>
-        </form>      
+            </form>
+            <!----FORGOT PASS POP UP----->
+            <div class="form-popup" id="forgotpass">
+                <form class="form-container">
+                  <h1 style="text-align: center; margin-top: 2px; border-bottom: 1px solid gray; padding-bottom: 10px;">FORGOT PASSWORD
+                  <button type="button" class="cancel" onclick="closeForgotpass()"><img src="image/close-btn.png"></button></h1>
+                     <!----LABEL AND INPUTS----->
+                    <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
+                    <input type="text" placeholder="Enter Email" name="email">
+                        <br>
+                    <button type="submit" class="btn">SEND VERIFICATION CODE</button>
+                        <br>
+                    <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
+                    <input type="password" placeholder="Enter Password" name="new-pass">
+                    <br>
+                    <button type="submit" class="btn" onclick="openResetpass()">CONFIRM CODE</button>
+                    <!----END POP UP----->
+                </form>
+              </div>
+          <!----END FORGOT PASS POP UP----->
+
+          <!----RESET PASS POP UP-----> <!----NOT OKAY, NOT APPEARING----->
+          <div class="form-popup" id="resetpass">
+            <form class="form-container">
+              <h1 style="text-align: center; margin-top: 2px; border-bottom: 1px solid gray; padding-bottom: 10px;">RESET PASSWORD
+              <button type="button" class="cancel" onclick="closeResetpass()"><img src="image/close-btn.png"></button></h1>
+                 <!----LABEL AND INPUTS----->
+                <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
+                <input type="text" placeholder="Enter Email" name="email">
+                    <br>
+                <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
+                <input type="password" placeholder="Enter Password" name="new-pass">
+                <br>
+                <button type="submit" class="btn">CONFIRM CODE</button>
+                <!----END POP UP----->
+            </form>
+          </div>
+
+
+
+            
+              
     </div>
     
 </body>

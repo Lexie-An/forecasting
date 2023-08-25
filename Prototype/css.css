@@ -108,11 +108,14 @@ body {
     color: #F5B553;
     float: right;
     margin-top: 125px;
-    margin-right: 45px;
-    text-decoration: none;
+    margin-right: 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    background-color: #141413;
+    border: 1px;
+    font-size: 20px;
+    font-family: Convergence;
 }
 
 .forgotpass:hover {
@@ -538,3 +541,80 @@ body {
     margin-left: 15px;
     margin-top: 1px;
 }
+
+/*-------   END   -------*/
+
+/*-------   FORGOT POP UP   -------*/
+.form-popup {
+    display: none;
+    position: fixed;
+    border: 3px solid #F5B553;
+    border-radius: 15px;
+    width: 800px;
+    background-color: #141413;
+    right: 400px;
+    bottom: 210px;
+}
+
+.form-container {
+    padding: 10px;
+    background-color: #141413;
+    border-radius: 12px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 350px;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    border: 1px solid #F5B553;
+    background: #141413;
+    border-radius: 10px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Convergence;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: whitesmoke;
+    outline: black;
+    color: black;
+}
+
+.form-container input[type=text]:hover, .form-container input[type=password]:hover {
+    background: #F5F5F5;
+}
+
+.form-container .btn {
+    background-color: #141413 ;
+    color: #B4B4B4;
+    padding: 10px;
+    border: 1px solid #F5B553;
+    cursor: pointer;    
+    width: 260px;
+    margin-bottom:10px;
+    margin-top: -20px;
+    margin-left: 415px;
+    border-radius: 10px;
+    font-family: Convergence;
+    font-size: 15px;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #F5B553;
+    color: black;
+}
+
+.cancel {
+    background-color: #141413;
+    border: 1px;
+    float: right;
+    margin-top: -4px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
