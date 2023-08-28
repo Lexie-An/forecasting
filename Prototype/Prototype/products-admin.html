@@ -106,21 +106,35 @@
                 <button class="btn-add" onclick="openaddcategory()"><img src="image/Add.png" style="width: 35px;"></button>
             </p>
              <!----ADDING CATEGORY POP UP----->
-             <div class="form-popup" id="addcategory">
-                <form class="form-container">
-                  <h1 style="color: white;">FORGOT PASSWORD
-                  <button type="button" class="cancel" onclick="closeaddcategory()"><img src="image/close-btn.png" style="height: 30px;"></button></h1>
+             <div class="form-popup-category" id="addcategory" style="display: none;">
+                <form class="form-container-category">
+                    <p style="color: #434343; font-size: 22px; margin-top: 3px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px;"><img src="image/tabler_category.png" style="height: 35px; float: left; padding-right: 8px; margin-top: -5px;">
+                        Adding Category
+                        <button type="button" class="cancel-category" onclick="closeaddcategory()"><img src="image/Close-Button-gray.png" style="height: 30px;"></button>
+                    </p>
                      <!----LABEL AND INPUTS----->
-                    <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
-                    <input type="text" placeholder="Enter Email" name="email">
-                        <br>
-                    <button type="submit" class="btn">SEND VERIFICATION CODE</button>
-                        <br>
-                    <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
-                    <input type="password" placeholder="Enter Password" name="new-pass">
-                    <br>
-                    <button type="submit" class="btn" onclick="">CONFIRM CODE</button>
-                    
+                     <div style="display: flex; justify-content: space-between;">
+                        <div style="height: 390px; width: 380px;">
+                            <!----SEARCH AND CATEGORY LIST----->
+                            <input type="search-category" id="search" name="search" placeholder="Search" class="searchbox-category">
+                            <br>
+                            <div class="box-search-category">
+                                <p style="color: #434343; font-size: 20px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px; padding-left: 15px;">Category List :</p>
+                            </div>
+                        </div>
+                        <!----ADD, UPDATE, DELETE CATEGORY----->
+                        <div style="height: 360px; width: 310px; float: right; padding-top: 30px;">
+                            <label for="name-category" style="margin-left: 15px; font-size: 20px;">Name of Category :</label>
+                            <br>
+                            <div class="box-search">
+                                <input type="text" name="name-category" style="width: 280px; margin-left: 5px;">
+                            </div>
+                            <div style=" margin-top: 15px; margin-left: 70px; width: 170px;">
+                            <button type="submit" class="btn-update" style="width: 170px; margin-bottom: 10px; font-size: 18px;">UPDATE</button>
+                            <button type="submit" class="btn-adds" style="width: 170px; margin-bottom: 10px; font-size: 18px;">ADD</button>
+                            <button type="submit" class="btn-delete" style="width: 170px; font-size: 18px;">DELETE</button></div>
+                        </div>
+                    </div>
                 </form>
               </div>
               <!----END POP UP----->
@@ -132,25 +146,39 @@
         <div class="box-brand">
             <div style="border-bottom: #B4B4B4 1px solid; height: 55px;">
                 <img src="image/tabler_category.png" class="icon">
-            <p class="icon-text" >Brand
+            <p class="icon-text" >Brands
                 <button class="btn-add" onclick="openaddbrand()"><img src="image/Add.png" style="width: 35px;"></button>
             </p>
-             <!----ADDING BRAND POP UP----->
-             <div class="form-popup" id="addbrand">
-                <form class="form-container">
-                  <h1 style="color: white;">FORGOT PASSWORD
-                  <button type="button" class="cancel" onclick="closeaddbrand()"><img src="image/close-btn.png" style="height: 30px;"></button></h1>
-                     <!----LABEL AND INPUTS----->
-                    <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
-                    <input type="text" placeholder="Enter Email" name="email">
-                        <br>
-                    <button type="submit" class="btn">SEND VERIFICATION CODE</button>
-                        <br>
-                    <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
-                    <input type="password" placeholder="Enter Password" name="new-pass">
-                    <br>
-                    <button type="submit" class="btn" onclick="">CONFIRM CODE</button>
-                    
+            <!----ADDING BRAND POP UP----->
+            <div class="form-popup-brand" id="addbrand" style="display: none;">
+                <form class="form-container-brand">
+                    <p style="color: #434343; font-size: 22px; margin-top: 3px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px;"><img src="image/tabler_category.png" style="height: 35px; float: left; padding-right: 8px; margin-top: -5px;">
+                        Adding Brands
+                  <button type="button" class="cancel-brand" onclick="closeaddbrand()"><img src="image/Close-Button-gray.png" style="height: 30px;"></button>
+                    </p>
+                  <!----LABEL AND INPUTS----->
+                     <div style="display: flex; justify-content: space-between;">
+                        <div style="height: 390px; width: 380px;">
+                            <!----SEARCH AND CATEGORY LIST----->
+                            <input type="search-brand" id="search" name="search" placeholder="Search" class="searchbox-brand">
+                            <br>
+                            <div class="box-search-brand">
+                                <p style="color: #434343; font-size: 20px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px; padding-left: 15px;">Brand List :</p>
+                            </div>
+                        </div>
+                        <!----ADD, UPDATE, DELETE CATEGORY----->
+                        <div style="height: 360px; width: 310px; float: right; padding-top: 30px;">
+                            <label for="name-brand" style="margin-left: 15px; font-size: 20px;">Name of Brand :</label>
+                            <br>
+                            <div class="box-search">
+                                <input type="text" name="name-brand" style="width: 280px; margin-left: 5px;">
+                            </div>
+                            <div style=" margin-top: 15px; margin-left: 70px; width: 170px;">
+                            <button type="submit" class="btn-update" style="width: 170px; margin-bottom: 10px; font-size: 18px;">UPDATE</button>
+                            <button type="submit" class="btn-adds" style="width: 170px; margin-bottom: 10px; font-size: 18px;">ADD</button>
+                            <button type="submit" class="btn-delete" style="width: 170px; font-size: 18px;">DELETE</button></div>
+                        </div>
+                    </div>
                 </form>
               </div>
               <!----END POP UP----->
@@ -166,21 +194,62 @@
                 <button class="btn-add2 openBtn" onclick="openaddproduct()"><img src="image/Add.png" style="width: 35px;"></button>
             </p>
             <!----ADDING PRODUCTS POP UP----->
-            <div class="form-popup" id="addproduct">
-                <form class="form-container">
-                  <h1 style="color: white;">FORGOT PASSWORD
-                  <button type="button" class="cancel" onclick="closeaddproduct()"><img src="image/close-btn.png" style="height: 30px;"></button></h1>
+            <div class="form-popup-products" id="addproduct" style="display: none;">
+                <form class="form-container-products">
+                    <p style="color: #434343; font-size: 22px; margin-top: 3px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px;"><img src="image/ep_milk-tea-gray.png" style="height: 35px; float: left; padding-right: 8px; margin-top: -5px;">
+                        Adding Product Information
+                        <button type="button" class="cancel-products" onclick="closeaddproduct()"><img src="image/Close-Button-gray.png" style="height: 28px;"></button>
+                    </p>
                      <!----LABEL AND INPUTS----->
-                    <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
-                    <input type="text" placeholder="Enter Email" name="email">
+                    <div>
+                        <div>
+                            <label for="name of product" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 200px;">Name of Product :</label>
+                            <label for="id name" style="margin-left: 45px;font-size: 20px; color: #434343;">ID Name :</label>
+                        </div>
                         <br>
-                    <button type="submit" class="btn">SEND VERIFICATION CODE</button>
+                        <div style="margin-left: 30px; margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 55px;">
+                            <input type="text" name="new-pass" style="width: 220px;">
+                        </div>
+                        <div>
+                            <label for="supplier name" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 230px;">Supplier Name :</label>
+                            <label for="product price" style="margin-left: 30px; font-size: 20px; color: #434343;">Product Price :</label>
+                        </div>
                         <br>
-                    <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
-                    <input type="password" placeholder="Enter Password" name="new-pass">
-                    <br>
-                    <button type="submit" class="btn" onclick="">CONFIRM CODE</button>
-                    
+                        <div style="margin-left: 30px;  margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 55px;">
+                            <input type="text" name="new-pass" style="width: 220px;">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="cost per box" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 35px;">Cost per Box :</label>
+                            <label for="expiry date" style="margin-left: 45px;font-size: 20px; color: #434343; margin-right: 30px;">Expiry Date :</label>
+                            <label for="category" style="margin-left: 45px;font-size: 20px; color: #434343;">Category :</label>
+                        </div>
+                        <br>
+                        <div style="margin-left: 30px;  margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 40px; width: 150px;">
+                            <input type="text" name="new-pass" style="width: 150px; margin-right: 40px;">
+                            <input type="text" name="new-pass" style="width: 220px;">
+                        </div>
+                        <div>
+                            <label for="selling price" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 35px;">Selling Price :</label>
+                            <label for="quantity" style="margin-left: 45px;font-size: 20px; color: #434343; margin-right: 30px;">Quantity :</label>
+                            <label for="brand" style="margin-left: 75px; font-size: 20px; color: #434343;">Brand :</label>
+                        </div>
+                        <br>
+                        <div style="margin-left: 30px;  margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 40px; width: 150px;">
+                            <input type="text" name="new-pass" style="width: 150px; margin-right: 40px;">
+                            <input type="text" name="new-pass" style="width: 220px;">
+                        </div>
+                    </div>
+                    <div style=" display: flex; justify-content: center;">
+                        <button type="submit" class="btn-update ">UPDATE</button>
+                        <button type="submit" class="btn-adds">ADD</button>
+                        <button type="submit" class="btn-delete">DELETE</button>
+                    </div>
                 </form>
               </div>
               <!----END POP UP----->
