@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Informations Staff</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
+    <script src='main.js'></script>
+</head>
+<body style="overflow: hidden;">
+    <!----NAVIGATION----->
+    <div class="navigation">        
+        <h1 style="text-align: center; cursor: default;" class="homepage">LOGO STORE</h1>
+        
+        <!--PRODUCTS-->
+        <a href="products-staff.html">
+            <button class="btn-nav" style="margin-top: 20px;"> 
+                <div class="products-inline">
+                    <div class="text">PRODUCTS</div>
+                    <img src="image/milk-tea.png" class="images">
+                </div>
+            </button>
+        </a>
+
+        <!--INVENTORY-->
+        <a href="inventory-staff.html">
+            <button class="btn-nav-not">
+                <div class="inventory-inline-not">
+                    <div class="text" style="left: 80px;">INVENTORY</div>
+                    <img src="image/milk-tea.png" class="images">
+                </div>
+            </button>
+        </a>
+
+        <!--STOCK ENTRY-->
+        <a href="stock-entry-staff.html">
+            <button class="btn-nav"> 
+                <div class="stock-entry-inline">
+                    <div class="text">STOCK ENTRY</div>
+                    <img src="image/milk-tea.png" class="images">
+                </div>
+            </button>
+        </a>
+
+        <!--REPORTS-->
+        <a href="">
+            <button class="btn-nav"> 
+                <div class="reports-inline">
+                    <div class="text">REPORTS</div>
+                    <img src="image/milk-tea.png" class="images">
+                </div>
+            </button>
+        </a>
+        
+        <!--LOG OUT-->
+        <a href="login.html">
+            <button class="btn-nav" style="margin-top: 296px; border-top: 1px solid;"> 
+                <div class="logout-inline">
+                    <div class="text">LOG OUT</div>
+                    <img src="image/milk-tea.png" class="images">
+                </div>
+            </button>
+        </a>
+    </div>
+    <!-----------END------------->
+
+     <!----HEADER----->
+     <div>
+        <p style="font-size: 40px; float: left; margin-bottom: -50px; margin-top: 15px; margin-left: 30px;">
+            <img src="image/ic_round-inventory.png" style="margin-right: 20px; float: left; ">
+            Inventory Board
+        </p>
+        <!-----------END------------->
+
+        <!--USER THAT LOGGED IN-->
+        <div class="user-log" style="margin-top: 0px; margin-right: 50px;">
+            <img src="image/ei_user.png" style="width: 80px; height: 75px;">
+            <h2 style="font-size: 30px; margin-top: 20px; cursor: default;">Lexie An</h2>
+        </div>
+        <!-----------END------------->
+
+        <!--NOTIFICATION REPORT-->
+        <div style="float: right;margin-right: -240px;">
+            <button class="btn-notif" style="margin-top: 15px;">
+                <img src="image/notif.png">
+            </button> 
+        </div>
+        <!-----------END------------->
+    </div>
+    
+    <!----BOARD----->
+    <div class="board">
+        <!----SEARCH INVENTORY----->
+        <div class="box-inventory-search">
+            <div style="border-bottom: #B4B4B4 1px solid;">
+                <input type="text" class="searchbox-inventory" id="search" name="search" placeholder="Search">
+                <button type="submit" class="btn-search-filter">FILTER</button>
+            </div>
+        </div>
+        <!----RECENT INVENTORY----->
+        <div class="box-recent-inventory">
+            <div>
+                <p style="color: #434343; font-size: 25px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 10px;">
+                    <img src="image/mdi_recent.png" style="height: 40px; float: left; padding-right: 10px; margin-top: -5px; padding-left: 10px;">
+                    Recent Inventory
+                </p>
+            </div>
+        </div>
+        <!----SALES BOARD----->
+        <div class="box-inventory-search" style="margin-top: 0px;">
+            <div>
+                <p style="color: #434343; font-size: 25px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 10px;">
+                    <img src="image/sales-board-gray.png" style="height: 40px; float: left; padding-right: 20px; margin-top: -5px; padding-left: 15px;">
+                    Sales Board
+                    <img src="image/Others.png" style="height: 40px; float: right; margin-top: -5px;">
+                </p>
+            </div>
+        </div>
+        <!----ITEM LIST----->
+        <div class="box-item-list">
+            <div>
+                <p style="color: #434343; font-size: 25px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 10px;">
+                    <img src="image/item-list-gray.png" style="height: 40px; float: left; padding-right: 10px; margin-top: -5px; padding-left: 10px;">
+                    Item List
+                    <img src="image/Others.png" style="height: 40px; float: right; margin-top: -5px;">
+                </p>
+            </div>
+        </div>
+        <!----DAILY SALES----->
+        <div class="box-item-list">
+            <div>
+                <p style="color: #434343; font-size: 25px; margin-top: 10px; border-bottom:1px solid #b3b3b3; padding-bottom: 10px;">
+                    <img src="image/daily-sales-gray.png" style="height: 40px; float: left; padding-right: 10px; margin-top: -5px; padding-left: 10px;">
+                    Daily Sales
+                    <img src="image/Others.png" style="height: 40px; float: right; margin-top: -5px;">
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-----------END BOARD------------->
+</body>
+</html>
