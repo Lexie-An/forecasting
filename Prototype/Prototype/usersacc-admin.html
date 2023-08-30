@@ -98,29 +98,60 @@
 
     <!----BOARD----->
     <div class="board">
-        <!----PRODUCTS INFO----->
-        <div class="box-suppliers">
+        <!----USER ACC INFO----->
+        <div class="box-useracc">
             <div style="border-bottom: #B4B4B4 1px solid; height: 55px;">
                 <img src="image/icon-park-outline_user-gray.png" class="icon2">
             <p class="icon-text3">User Account Informations
                 <button class="btn-add3" onclick="openadduseracc()"><img src="image/Add.png" style="width: 35px;"></button>
             </p>
              <!----ADDING PRODUCTS POP UP----->
-             <div class="form-popup" id="adduseracc">
-                <form class="form-container">
-                  <h1 style="color: white;">FORGOT PASSWORD
-                  <button type="button" class="cancel" onclick="closeadduseracc()"><img src="image/close-btn.png" style="height: 30px;"></button></h1>
+             <div class="form-popup-useracc" id="adduseracc" style="display: none;">
+                <form class="form-container-useracc">
+                    <p style="color: #434343; font-size: 22px; margin-top: 3px; border-bottom:1px solid #b3b3b3; padding-bottom: 8px;">
+                        <img src="image/icon-park-outline_user-gray.png" style="height: 30px; float: left; padding-right: 15px; margin-top: -5px; padding-left: 10px;">
+                        Adding User Account
+                        <button type="button" class="cancel-useracc" onclick="closeadduseracc()"><img src="image/Close-Button-gray.png" style="height: 30px;"></button>
+                    </p>
                      <!----LABEL AND INPUTS----->
-                    <label for="email" style="margin-left: 122px; margin-right: 20px; font-size: 25px;">Enter User Email :</label>
-                    <input type="text" placeholder="Enter Email" name="email">
+                     <div>
+                        <div>
+                            <label for="name of product" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 260px;">Name :</label>
+                            <label for="id name" style="margin-left: 45px;font-size: 20px; color: #434343;">User Type :</label>
+                        </div>
                         <br>
-                    <button type="submit" class="btn">SEND VERIFICATION CODE</button>
+                        <div style="margin-left: 30px; margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 40px;">
+                            <select class="dropdown-user">
+                                    <option value="1">Admin</option>
+                                    <option value="2">Staff</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="supplier name" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 90px;">Email Address (Manager) :</label>
+                            <label for="product price" style="margin-left: 30px; font-size: 20px; color: #434343;">Username :</label>
+                        </div>
                         <br>
-                    <label for="Verif-code" style="margin-left: 48px; margin-right: 20px; font-size: 25px;">Enter Verification Code :</label>
-                    <input type="password" placeholder="Enter Password" name="new-pass">
-                    <br>
-                    <button type="submit" class="btn" onclick="">CONFIRM CODE</button>
+                        <div style="margin-left: 30px;  margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 40px;">
+                            <input type="text" name="new-pass" style="width: 220px;">
+                        </div>
+                        <div>
+                            <label for="supplier name" style="margin-left: 40px; font-size: 20px; color: #434343; margin-right: 210px;">Password:</label>
+                            <label for="product price" style="margin-left: 30px; font-size: 20px; color: #434343;">Re - Type Password :</label>
+                        </div>
+                        <br>
+                        <div style="margin-left: 30px;  margin-bottom: 20px;">
+                            <input type="text" name="email" style="margin-right: 60px; width: 260px;">
+                            <input type="text" name="new-pass" style="width: 260px;">
+                        </div>
+                    </div>
                     
+                    <div style=" display: flex; justify-content: center;">
+                        <button type="submit" class="btn-update ">UPDATE</button>
+                        <button type="submit" class="btn-adds">ADD</button>
+                        <button type="submit" class="btn-delete">DELETE</button>
+                    </div>
                 </form>
               </div>
               <!----END POP UP----->
