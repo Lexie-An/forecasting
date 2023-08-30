@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Product Informations Admin</title>
+    <title>Sales Revenue Admin</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
     <script src='main.js'></script>
@@ -14,7 +14,7 @@
         <a href="homepage-admin.html" class="homepage">
             <h1 style="text-align: center; cursor: default;">LOGO STORE</h1>
         </a>
-
+        
         <!--PRODUCTS-->
         <a href="products-admin.html">
             <button class="btn-nav" style="margin-top: 20px;"> 
@@ -46,22 +46,22 @@
         </a>
 
         <!--SALES REVENUE-->
-        <a href="salesrev-admin.html">
             <button class="btn-nav"> 
                 <div class="salesrev-inline">
                     <div class="text">SALES REVENUE</div>
                     <img src="image/milk-tea.png" class="images">
                 </div>
             </button>
-        </a>
 
         <!--REPORTS-->
-            <button class="btn-nav-not"> 
-                <div class="reports-inline-not">
+        <a href="reports-admin.html">
+            <button class="btn-nav"> 
+                <div class="reports-inline">
                     <div class="text">REPORTS</div>
                     <img src="image/milk-tea.png" class="images">
                 </div>
             </button>
+        </a>
         
         <!--LOG OUT-->
         <a href="login.html">
@@ -75,8 +75,8 @@
     </div>
     <!-----------END------------->
 
-     <!----HEADER----->
-     <div>
+    <!----HEADER----->
+    <div>
         <!--SEARCH-->
         <input type="text" class="searchbox" id="search" name="search" placeholder="Search">
 
@@ -84,10 +84,10 @@
         <div style="float: right;">
             <button class="btn-notif">
                 <img src="image/notif.png">
-            </button> 
-        </div>
+            </button>
         <!-----------END------------->
-       
+
+        </div>
         <!--USER THAT LOGGED IN-->
         <div class="user-log">
             <img src="image/ei_user.png" style="width: 80px; height: 75px;">
@@ -98,14 +98,31 @@
 
     <!----BOARD----->
     <div class="board">
-        <!----PRODUCTS INFO----->
-        <div class="box-suppliers">
-            <div style="border-bottom: #B4B4B4 1px solid; height: 55px;">
-                <img src="image/tabler_report-gray.png" class="icon4">
-            <p class="icon-text3">Notification Reports
-                <button class="btn-add3"><img src="image/Others.png" style="width: 35px;"></button>
+        <!--FORECASTING GRAPH-->
+        <div class="box-graph" style="height: 330px;">
+            <p class="forecasting-text">
+                <img src="image/Forecasting.png" style="height: 28px; padding-right: 15px; padding-top: 5px; margin-left: 5px;">
+                <img src="image/Others.png" style="height: 40px; float: right;">
             </p>
+        </div>
+        <!-----------END------------->
+
+        <!--SALES REVENUE-->
+        <div class="box-salesrev">
+            <p class="salesrev-text">
+                <img src="image/uil_chart-growth-gray.png" style="margin-right: 15px; height: 40px; float: left; margin-top: -5px;">
+                Sales Revenue
+                <img src="image/Others.png" style="height: 40px; float: right; margin-top: -5px;">
+            </p>
+            <div div class="salesrev-division-container">
+                <div class="salesrev-division">Daily Sales</div>
+                <div class="salesrev-division">Weekly Sales</div>
+                <div class="salesrev-division" style="border-right: 1px;">Monthly Sales</div>
+            </div>
+        </div>
+        <!-----------END------------->
     </div>
     <!-----------END BOARD------------->
+
 </body>
 </html>
